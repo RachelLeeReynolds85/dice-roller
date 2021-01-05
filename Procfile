@@ -1,0 +1,1 @@
+web: gunicorn eclipse_app.app:app

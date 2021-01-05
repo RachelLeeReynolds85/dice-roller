@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script> 
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/darkstyle.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/form.css') }}">
+    <title>Dice App</title>
+    
+</head>
+<body>
+    <div class="header">
+        <br>
+        <h1 class="text-center">Dice Probabilities App</h1>
+    <div class="navbar navbar-fixed-top">
+        <br>
+        
+        <nav class="text-center center">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item"><a href="{{ url_for('index') }}">Get Probabilities</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a href="{{ url_for('index') }}">D6 Tables</a></li>
+            </ul>
+            <hr>
+        </nav>  
+        </div>
+    </div>  
+
+
+    {% block content %}{% endblock%}
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>
