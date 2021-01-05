@@ -1,1 +1,1 @@
-web: gunicorn eclipse_app.app:app
+web: gunicorn dice_app.app:app
